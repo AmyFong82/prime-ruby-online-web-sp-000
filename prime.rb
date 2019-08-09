@@ -4,11 +4,9 @@ def prime?(integer)
     true
   elsif integer > 1 && !integer.even? && prime_nums.each {|num|
     integer % num != 0
-  }
-  true
-else
-  false
-end
-
-
+    }
+    true
+  else
+    false
+  end
 end
