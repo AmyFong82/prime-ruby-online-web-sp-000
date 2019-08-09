@@ -1,3 +1,3 @@
 def prime?(integer)
-  interger > 1 && interger % 2 !== 0
+  integer > 1 && integer % 2 !== 0
 end
