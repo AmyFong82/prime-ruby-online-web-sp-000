@@ -1,9 +1,9 @@
 def prime?(integer)
-    prime_nums = [2, 3, 5, 7, 11, 13]
-    dividers = Array(14..100)
-    if prime_nums.include?(integer)
-      true
-    elsif integer > 1 && integer.odd? && prime_nums.each {|num|
+    # prime_nums = [2, 3, 5, 7, 11, 13]
+    dividers = Array(2..100)
+    # if prime_nums.include?(integer)
+    #   true
+    if integer > 1 && integer.odd? && dividers.each {|num|
       integer % num != 0
     }
     true
