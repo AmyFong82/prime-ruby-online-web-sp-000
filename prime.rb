@@ -5,8 +5,8 @@ def prime?(integer)
       true
     elsif prime_nums.each {|num|
       integer % num != 0
-      true
     }
+    true
   else
     false
   end
