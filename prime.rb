@@ -3,7 +3,7 @@ def prime?(integer)
     dividers = Array(2..100)
     if prime_nums.include?(integer)
       true
-    elsif integer > 1 && integer.odd? && dividers.each {|num|
+    elsif integer > 1 && integer.odd? && dividers.all? {|num|
       integer % num != 0
     }
     true
